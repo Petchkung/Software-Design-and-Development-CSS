@@ -386,9 +386,123 @@ background-size: cover;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/products/2020_lamborghini_aventador_svj_roadster_4k-3840x2160.jpg');"></div>
+            <div class="product-info">
+                <h2 class="product-title">lamborghini</h2>
+                <p class="product-price">฿35,000,000</p>
+                <p class="product-description">รถสปอร์ต</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/products/111940_1_5.webp');"></div>
+            <div class="product-info">
+                <h2 class="product-title">GTR R35</h2>
+                <p class="product-price">฿11,000,000</p>
+                <p class="product-description">รรถสปอร์ต</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/products/mclaren-3.jpg');"></div>
+            <div class="product-info">
+                <h2 class="product-title">mclaren</h2>
+                <p class="product-price">฿25,000,000</p>
+                <p class="product-description">รถสปอร์ต</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/products/R.jpg');"></div>
+            <div class="product-info">
+                <h2 class="product-title">Audi R8</h2>
+                <p class="product-price">฿9,000,000</p>
+                <p class="product-description">รถสปอร์ต</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 ```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+```css
+.product-card {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: white;
+    margin: 15px;
+    display: inline-block;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-title {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #007bff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.product-button {
+    display: block;
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.product-button:hover {
+    background: linear-gradient(to right, #0056b3, #003980);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+```
+![image](https://github.com/user-attachments/assets/0037aa5d-be9b-49ce-a4b6-165a63e95077)
+
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
